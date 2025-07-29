@@ -1,17 +1,26 @@
 {
   "name": "todo_api_docker",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Todo API with Docker",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "todo",
+    "api",
+    "docker",
+    "express"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^17.2.1",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mysql2": "^3.6.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
